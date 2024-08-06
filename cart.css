@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+nav {
+  background-color: rgb(59, 93, 80);
+  padding-bottom: 15px!important;
+}
+
+.heading {
+  color: white !important;
+  font-weight: bold;
+}
+
+.nav-list li {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-list li a {
+  color: rgba(255, 255, 255, 0.6) !important; /* Lighter color for non-active items */
+  position: relative;
+  padding-bottom: 5px; 
+}
+
+.nav-list li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: orange;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-list li a:hover::after{
+  visibility: visible;
+  width: 100%;
+  transform: scaleX(1);
+}
+
+.nav-list li.current a {
+  color: white !important;
+}
+
+
+    /*navbar css ends here*/
+    /*cart css starts here*/
+
+.cart-section1{
+    background: #3b5d50;
+    padding: 80px 0px;
+    
+}
+.heading h1{
+    color: #fff;
+}
+
+.cart-section2{
+  background-color: ;
+}
+.cart-section2{
+    margin-top: 50px;
+    margin-bottom: 150px;
+   max-width: 1500px;
+   width: 100%;
+}
+.cart-heading{
+  margin-left: 430px;
+}
+
+.cart-table {
+    overflow-x: auto;
+}
+.cart-table .product-thumbnail {
+    width: 200px;
+}
+.cart-table thead th {
+    padding: 30px;
+    text-align: center;
+    border-width: 0px !important;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 18px;
+}
+.cart-table tbody tr:first-child td {
+    border-top: 1px solid #3b5d50 !important;
+}
+.cart-table td {
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 0.8);
+}
+.cart-table .btn {
+    background: none !important;
+    color: #000000;
+    border: none;
+    height: auto !important;
+}
+.cart-table .btn {
+    padding: 2px 10px;
+}
+.total-amount{
+    margin-top: 80px;
+    padding-bottom: 30px;
+}
+.total-amount .btn {
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: #ffffff;
+    background: #2f2f2f;
+    border-color: #2f2f2f;
+    box-shadow: none;
+    font-size: 18px;
+}
+.total-amount input{
+    box-shadow: none !important;
+}
+.total-amount .text-black {
+  opacity: 1;
+  color: #000;
+}
+.btn{
+    box-shadow: none !important;
+}
+.buy-btn{
+    border-radius: 20px;
+    background-color: black;
+    padding: 12px 30px;
+    color: white;
+    font-size: 17px;
+    max-width: 140px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .column{
+        padding-left: 20px;
+    }
+  
+    .total-amount .btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .buy-btn {
+        
+    }
+}
+
+
+ /*cart css ends here*/
+
+/*footer css starts here*/
+   .footer-section {
+    padding: 80px 0px;
+    background: #ffffff;
+}
+
+
+}
+.PE {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.PE a {
+     font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.para1{
+    line-height: 1.5;
+}
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+.footer-section .custom-social li {
+    margin: 2px;
+    display: inline-block;
+}
+.footer-section .custom-social li a {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    background: #dce5e4;
+    color: #3b5d50;
+    border-radius: 50%;
+}
+.custom-social li a{
+    text-decoration: none;
+}
+.footer-section .custom-social li {
+    margin: 2px;
+    display: inline-block;
+}
+
+
+
+.list li a{
+  text-decoration: none;
+  list-style-type: none;
+  color: black;   
+}
+
+.list h6{
+  color: black;
+  font-size: 18px;
+  font-weight: 150px;
+
+}
+.list p a{
+ color: black;
+ text-decoration: none;
+}
+.text1{
+    font-size: 14px;
+}
+
+ @media (max-width: 575.98px) { 
+     .custom-col {
+      flex: 0 0 50%;
+     max-width: 50%;
+     }
+        }
+
+
+@media (max-width: 987px) {
+    .footer-brand {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .custom-col {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
