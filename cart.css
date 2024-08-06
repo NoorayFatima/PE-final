@@ -60,8 +60,11 @@ nav {
 .cart-section2{
     margin-top: 50px;
     margin-bottom: 150px;
-
 }
+.cart-section2{
+  background-color:RGB(221 226 224) ;
+}
+
 .cart-heading{
   margin-left: 430px;
 }
